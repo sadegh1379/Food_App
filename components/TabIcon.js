@@ -7,7 +7,7 @@ const TabIcon = ({focused , icon}) => {
         <View
             style={{
                 width : 50,
-                height : 80,
+                height : 70,
                 alignItems:'center',
                 justifyContent:'center'
             }}

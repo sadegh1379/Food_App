@@ -1,10 +1,19 @@
-import React from 'react';
+import React ,{useState , useEffect} from 'react';
 import {
     View,
     Text
 } from 'react-native';
 
-const Recipe = () => {
+const Recipe = ({route , navigation}) => {
+    const [selectedRecipe, setSelectedRecipe] = useState(null)
+
+    useEffect(()=>{
+        setSelectedRecipe(route.params.recipe)
+    },[])
+    if(selectedRecipe === null){
+        return null
+    }
+    
     return (
         <View
             style={{
@@ -13,7 +22,7 @@ const Recipe = () => {
                 justifyContent: 'center'
             }}
         >
-            <Text>Recipe</Text>
+            <Text>Recipe {selectedRecipe.name}</Text>
         </View>
     )
 }
