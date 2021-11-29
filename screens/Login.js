@@ -71,7 +71,8 @@ const Login = ({navigation}) => {
                 and cooking it easily !
             </Text>
             {/* Login */}
-            <CustomTextButton colors={[COLORS.darkGreen , COLORS.lime]} title="login"
+            <CustomTextButton colors={[COLORS.darkGreen , COLORS.lime]}
+                title="Login"
                 onPress={()=>navigation.replace('Home')}
                 customButtonStyle={{
                     paddingVertical :20,
@@ -81,7 +82,7 @@ const Login = ({navigation}) => {
                 }}
             />
             {/* sign up */}
-            <CustomTextButton colors={[]} title="sign up"
+            <CustomTextButton colors={[]} title="Sign Up"
                 onPress={()=>navigation.replace('Home')}
                 customButtonStyle={{
                     paddingVertical :18,
