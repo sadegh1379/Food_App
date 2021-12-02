@@ -17,6 +17,7 @@ const CategoriCard = ({categoriItem , onPress , containerCustomStyle}) => {
                 marginTop : 10,
                 backgroundColor:COLORS.gray2,
                 marginHorizontal : 10,
+                
                 ...containerCustomStyle
             }}
             onPress={onPress}

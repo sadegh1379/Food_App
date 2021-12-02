@@ -5,11 +5,130 @@ import {
   TouchableOpacity,
   SafeAreaView,
   FlatList,
+  Image,
+  TextInput
 } from 'react-native';
-import { COLORS, dummyData } from '../constants';
+import { COLORS, dummyData, FONTS, icons, images, SIZES } from '../constants';
 import { CategoriCard } from '../components';
 
 const Home = ({navigation}) => {
+
+  const renderHeader = ()=>{
+    return(
+      <View style={{flex:1 , marginVertical : 10
+        ,flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+        marginHorizontal : SIZES.padding
+      }}>
+          <View>
+            <Text
+              style={{
+                ...FONTS.h2,
+                color : COLORS.darkGreen
+              }}
+            >Hello Sadegh ,</Text>
+            <Text
+              style={{
+                color:COLORS.gray,
+                ...FONTS.body3,
+                marginTop : 5
+              }}
+            >what to want to cook tody ?!</Text>
+          </View>
+            <TouchableOpacity>
+              <Image  
+                  source={images.sadegh}
+                  resizeMode="cover"
+                  style={{
+                    width :50,
+                    height : 50,
+                    borderRadius : 80,
+                  }}
+              />
+            </TouchableOpacity>
+      </View>
+    )
+  }
+
+  const renderSearchbar = ()=>{
+    return(
+      <View
+        style={{
+          backgroundColor:COLORS.gray2,
+          flexDirection:'row',
+          alignItems:'center',
+          borderRadius : SIZES.radius,
+          marginHorizontal : SIZES.base,
+          paddingHorizontal : SIZES.radius,
+          height : 50,
+          marginVertical : SIZES.base,
+          
+        }}
+      >
+        <Image
+          source={icons.search}
+          style={{
+            width : 20,
+            height : 20,
+            tintColor  : COLORS.gray,
+            
+          }}
+        />
+        <TextInput
+          placeholderTextColor={COLORS.gray}
+          placeholder="search recipes"
+          style={{
+            ...FONTS.body3,
+            marginLeft : SIZES.radius
+          }}
+        />
+      </View>
+    )
+  }
+
+  const renderSeeRecipe = ()=>{
+    return(
+      <View
+        style={{
+          flexDirection:'row',
+          marginHorizontal : SIZES.base,
+          backgroundColor : COLORS.lightGreen,
+          paddingVertical : SIZES.base,
+          borderRadius:SIZES.radius
+        }}
+      >
+          <View>
+            <Image
+              source={images.recipe}
+              resizeMode="cover"
+              style={{
+                width : 80,
+                height : 80
+              }}
+            />
+          </View>
+          <View style={{flex : 1 , paddingLeft : 20}}>
+            <Text
+              style={{
+                ...FONTS.body4,
+                width : '60%',
+                color :COLORS.black
+              }}
+            >you have 12 recipes that you havent tried yet</Text>
+            <TouchableOpacity>
+              <Text
+                style={{
+                  textDecorationLine:'underline',
+                  ...FONTS.h4,
+                  color : COLORS.darkGreen
+                }}
+              >see recipe</Text>
+            </TouchableOpacity>
+          </View>
+      </View>
+    )
+  }
   return(
     <SafeAreaView style={{flex :1 , backgroundColor:COLORS.white}}>
         <FlatList
@@ -19,12 +138,20 @@ const Home = ({navigation}) => {
             showsVerticalScrollIndicator={false}
             renderItem={({item})=><CategoriCard
                 categoriItem={item}
-                containerCustomStyle={{}}
+                containerCustomStyle={{borderRadius : SIZES.radius}}
                 onPress={()=>navigation.navigate('Recipe' , {recipe : item})}
                 />}
-            ListHeaderComponent={()=>{
-                return(<View></View>)
-            }}
+            ListHeaderComponent={
+              <View>
+                {/* header */}
+                {renderHeader()}
+                {/* search bar */}
+                {renderSearchbar()}
+                {/* see recipe card */}
+                {renderSeeRecipe()}
+                {/* categori header */}
+              </View>
+            }
             ListFooterComponent={()=>{
                 return(<View style={{marginBottom:80}}></View>)
             }}
