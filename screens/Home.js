@@ -95,7 +95,8 @@ const Home = ({navigation}) => {
           marginHorizontal : SIZES.base,
           backgroundColor : COLORS.lightGreen,
           paddingVertical : SIZES.base,
-          borderRadius:SIZES.radius
+          borderRadius:SIZES.radius,
+          marginTop : SIZES.padding
         }}
       >
           <View>
