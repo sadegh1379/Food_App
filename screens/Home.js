@@ -9,7 +9,7 @@ import {
   TextInput
 } from 'react-native';
 import { COLORS, dummyData, FONTS, icons, images, SIZES } from '../constants';
-import { CategoriCard } from '../components';
+import { CategoriCard, TrendingCard } from '../components';
 
 const Home = ({navigation}) => {
 
@@ -61,7 +61,7 @@ const Home = ({navigation}) => {
           borderRadius : SIZES.radius,
           marginHorizontal : SIZES.base,
           paddingHorizontal : SIZES.radius,
-          height : 50,
+          height : 55,
           marginVertical : SIZES.base,
           
         }}
@@ -129,6 +129,36 @@ const Home = ({navigation}) => {
       </View>
     )
   }
+
+  const trendingSection = ()=>{
+    return(
+      <View style={{
+        marginHorizontal : SIZES.base,
+        marginVertical : SIZES.padding
+      }}>
+        <Text
+          style={{
+            ...FONTS.h2,
+            color:COLORS.black
+          }}
+        >Trending Recipe</Text>
+        <FlatList
+          data={dummyData.trendingRecipes}
+          keyExtractor={item=>`${item.id}`}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          renderItem={({item,index})=>(
+            <TrendingCard
+              trendingItem={item}
+              onPress={()=>console.log(item)}
+              customStyle={{}}
+            />
+          )}
+        />
+      </View>
+    )
+  }
+
   return(
     <SafeAreaView style={{flex :1 , backgroundColor:COLORS.white}}>
         <FlatList
@@ -149,6 +179,8 @@ const Home = ({navigation}) => {
                 {renderSearchbar()}
                 {/* see recipe card */}
                 {renderSeeRecipe()}
+                {/* trending section */}
+                {trendingSection()}
                 {/* categori header */}
               </View>
             }
