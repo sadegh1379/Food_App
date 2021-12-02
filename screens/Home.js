@@ -34,7 +34,7 @@ const Home = ({navigation}) => {
                 ...FONTS.body3,
                 marginTop : 5
               }}
-            >what to want to cook tody ?!</Text>
+            >what to want cook tody ! ?</Text>
           </View>
             <TouchableOpacity>
               <Image  
@@ -151,11 +151,40 @@ const Home = ({navigation}) => {
           renderItem={({item,index})=>(
             <TrendingCard
               trendingItem={item}
-              onPress={()=>console.log(item)}
+              onPress={()=>navigation.navigate('Recipe',{recipe : item})}
               customStyle={{}}
             />
           )}
         />
+      </View>
+    )
+  }
+
+  const renderCategori = ()=>{
+    return(
+      <View 
+        style={{
+          paddingHorizontal:SIZES.base,
+          flexDirection:'row',
+          alignItems:'center',
+          marginBottom : 10
+        }}
+      >
+        <Text
+          style={{
+            ...FONTS.h2,
+            color :COLORS.black,
+            flex:1
+          }}
+        >Categories</Text>
+        <TouchableOpacity>
+        <Text
+          style={{
+            color:COLORS.gray
+          }}
+        >See All</Text>
+        </TouchableOpacity>
+        
       </View>
     )
   }
@@ -183,6 +212,7 @@ const Home = ({navigation}) => {
                 {/* trending section */}
                 {trendingSection()}
                 {/* categori header */}
+                {renderCategori()}
               </View>
             }
             ListFooterComponent={()=>{
