@@ -51,6 +51,58 @@ const trendingRecipes = [
                 description: "Black Pepper",
                 quantity: "¼ tbsp"
             },
+            {
+                id: 7,
+                icon: icons.pepper,
+                description: "Black Pepper",
+                quantity: "¼ tbsp"
+            },
+            {
+                id: 8,
+                icon: icons.pepper,
+                description: "Black Pepper",
+                quantity: "¼ tbsp"
+            },
+            {
+                id: 9,
+                icon: icons.pepper,
+                description: "Black Pepper",
+                quantity: "¼ tbsp"
+            },
+            {
+                id: 10,
+                icon: icons.pepper,
+                description: "Black Pepper",
+                quantity: "¼ tbsp"
+            },
+            {
+                id: 11,
+                icon: icons.pepper,
+                description: "Black Pepper",
+                quantity: "¼ tbsp"
+            },
+
+            {
+                id: 12,
+                icon: icons.pepper,
+                description: "Black Pepper",
+                quantity: "¼ tbsp"
+            },
+
+            {
+                id: 13,
+                icon: icons.pepper,
+                description: "Black Pepper",
+                quantity: "¼ tbsp"
+            },
+
+            {
+                id: 14,
+                icon: icons.pepper,
+                description: "Black Pepper",
+                quantity: "¼ tbsp"
+            },
+
 
         ],
         viewers: [
@@ -212,6 +264,156 @@ const trendingRecipes = [
     },
     {
         id: 4,
+        name: "Nasi Note",
+        image: images.satay,
+        duration: "1 hour",
+        serving: 10,
+        isBookmark: true,
+        category: "Local",
+        author: {
+            profilePic: images.UserProfile7,
+            name: "Ali Baba",
+        },
+        ingredients: [
+            {
+                id: 1,
+                icon: icons.chilli,
+                description: "Dried Chilli",
+                quantity: "30g"
+            },
+            {
+                id: 2,
+                icon: icons.garlic,
+                description: "Garlic cloves",
+                quantity: "3"
+            },
+            {
+                id: 3,
+                icon: icons.egg,
+                description: "Egg",
+                quantity: "10"
+            },
+            {
+                id: 4,
+                icon: icons.rice,
+                description: "rice",
+                quantity: "1kg"
+            },
+            {
+                id: 5,
+                icon: icons.anchovy,
+                description: "Dried anchovies",
+                quantity: "3 cups"
+            },
+
+
+        ],
+        viewers: [
+
+        ]
+    },
+    {
+        id: 5,
+        name: "Nasi Note",
+        image: images.satay,
+        duration: "1 hour",
+        serving: 10,
+        isBookmark: true,
+        category: "Local",
+        author: {
+            profilePic: images.UserProfile7,
+            name: "Ali Baba",
+        },
+        ingredients: [
+            {
+                id: 1,
+                icon: icons.chilli,
+                description: "Dried Chilli",
+                quantity: "30g"
+            },
+            {
+                id: 2,
+                icon: icons.garlic,
+                description: "Garlic cloves",
+                quantity: "3"
+            },
+            {
+                id: 3,
+                icon: icons.egg,
+                description: "Egg",
+                quantity: "10"
+            },
+            {
+                id: 4,
+                icon: icons.rice,
+                description: "rice",
+                quantity: "1kg"
+            },
+            {
+                id: 5,
+                icon: icons.anchovy,
+                description: "Dried anchovies",
+                quantity: "3 cups"
+            },
+
+
+        ],
+        viewers: [
+
+        ]
+    },
+    {
+        id: 6,
+        name: "Nasi Note",
+        image: images.satay,
+        duration: "1 hour",
+        serving: 10,
+        isBookmark: true,
+        category: "Local",
+        author: {
+            profilePic: images.UserProfile7,
+            name: "Ali Baba",
+        },
+        ingredients: [
+            {
+                id: 1,
+                icon: icons.chilli,
+                description: "Dried Chilli",
+                quantity: "30g"
+            },
+            {
+                id: 2,
+                icon: icons.garlic,
+                description: "Garlic cloves",
+                quantity: "3"
+            },
+            {
+                id: 3,
+                icon: icons.egg,
+                description: "Egg",
+                quantity: "10"
+            },
+            {
+                id: 4,
+                icon: icons.rice,
+                description: "rice",
+                quantity: "1kg"
+            },
+            {
+                id: 5,
+                icon: icons.anchovy,
+                description: "Dried anchovies",
+                quantity: "3 cups"
+            },
+
+
+        ],
+        viewers: [
+
+        ]
+    },
+    {
+        id: 7,
         name: "Nasi Note",
         image: images.satay,
         duration: "1 hour",
