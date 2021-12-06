@@ -37,11 +37,29 @@ const Login = ({navigation}) => {
             <Text
               style={{
                 color: COLORS.white,
-                ...FONTS.largeTitle,
+                ...FONTS.h1,
                 width: '70%',
                 lineHeight : 45
               }}>
-              Cooking a Delevous Food Easily
+              سلام داداش خوبی
+            </Text>
+            <Text
+              style={{
+                color: COLORS.white,
+                ...FONTS.body1,
+                width: '70%',
+                lineHeight : 45
+              }}>
+              سلام داداش خوبی
+            </Text>
+            <Text
+              style={{
+                color: COLORS.white,
+                ...FONTS.h2,
+                width: '70%',
+                lineHeight : 45
+              }}>
+              سلام داداش خوبی
             </Text>
           </LinearGradient>
         </ImageBackground>

@@ -30,6 +30,8 @@
 		F0EFC2EB4C184EF0BB528798 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A8B2C9ABFDC4E23A8E15CE7 /* RobotoCondensed-Light.ttf */; };
 		545A6F6612C54B0680FC1367 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185064A97C5E4FE9A8A8A7FD /* RobotoCondensed-LightItalic.ttf */; };
 		8E29017CDB54496482870106 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8A7B8A5D0824B178A47E353 /* RobotoCondensed-Regular.ttf */; };
+		FAC567C744C5449DA5DF90B8 /* BYekan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06A907D08D9843C9B9D15525 /* BYekan.ttf */; };
+		0FFB3D8B97BA428D84F6A17F /* IRANSansMobile.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DA877D7AA48C3B1705EFE /* IRANSansMobile.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		6A8B2C9ABFDC4E23A8E15CE7 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-Light.ttf"; path = "../assets/fonts/RobotoCondensed-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		185064A97C5E4FE9A8A8A7FD /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-LightItalic.ttf"; path = "../assets/fonts/RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		A8A7B8A5D0824B178A47E353 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; name = "RobotoCondensed-Regular.ttf"; path = "../assets/fonts/RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		06A907D08D9843C9B9D15525 /* BYekan.ttf */ = {isa = PBXFileReference; name = "BYekan.ttf"; path = "../assets/fonts/BYekan.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5C4DA877D7AA48C3B1705EFE /* IRANSansMobile.ttf */ = {isa = PBXFileReference; name = "IRANSansMobile.ttf"; path = "../assets/fonts/IRANSansMobile.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,8 @@
 				6A8B2C9ABFDC4E23A8E15CE7 /* RobotoCondensed-Light.ttf */,
 				185064A97C5E4FE9A8A8A7FD /* RobotoCondensed-LightItalic.ttf */,
 				A8A7B8A5D0824B178A47E353 /* RobotoCondensed-Regular.ttf */,
+				06A907D08D9843C9B9D15525 /* BYekan.ttf */,
+				5C4DA877D7AA48C3B1705EFE /* IRANSansMobile.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -295,6 +301,8 @@
 				F0EFC2EB4C184EF0BB528798 /* RobotoCondensed-Light.ttf in Resources */,
 				545A6F6612C54B0680FC1367 /* RobotoCondensed-LightItalic.ttf in Resources */,
 				8E29017CDB54496482870106 /* RobotoCondensed-Regular.ttf in Resources */,
+				FAC567C744C5449DA5DF90B8 /* BYekan.ttf in Resources */,
+				0FFB3D8B97BA428D84F6A17F /* IRANSansMobile.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
